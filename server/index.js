@@ -14,7 +14,7 @@ app.use(cors())
 
 app.use('/posts', postRoutes)
 
-const connection_url = process.env.CONNECTION_URL
+const connection_url = 'mongodb+srv://mridulinlko:mridul123@cluster0.2uuug.mongodb.net/?retryWrites=true&w=majority' || process.env.CONNECTION_URL
 const PORT  = process.env.PORT || 5000
 
 mongoose.connect(connection_url)
